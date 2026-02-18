@@ -1,6 +1,6 @@
 import { NavigationProp, useNavigation } from '@react-navigation/native';
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
-import { RootStackParamList } from '../App';
+import { RootStackParamList } from "./navigation/MainNavigation";
 
 export default function Welcome() {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();

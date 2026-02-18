@@ -5,7 +5,7 @@ import BackButton from '../components/BackButton';
 import AppButton from '../components/AppButton';
 import SocialButton from '../components/SocialButton';
 import Input from '../components/Input';
-import { RootStackParamList } from '../../App';
+import { RootStackParamList } from '../navigation/MainNavigation';
 
 export default function SignIn() {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();

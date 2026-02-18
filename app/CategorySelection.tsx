@@ -1,6 +1,6 @@
 import { NavigationProp, useNavigation } from "@react-navigation/native";
 import { StyleSheet, Text, View, Image, Pressable } from "react-native";
-import { RootStackParamList } from "../App";
+import { RootStackParamList } from "./navigation/MainNavigation";
 import ScreenContainer from "./components/ScreenContainer";
 
 const categories = [

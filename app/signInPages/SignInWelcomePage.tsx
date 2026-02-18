@@ -1,9 +1,9 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import { useNavigation, NavigationProp } from "@react-navigation/native";
-import { RootStackParamList } from "../../App";
 import ScreenContainer from "../components/ScreenContainer";
 import Header from "../components/Header";
 import AppButton from "../components/AppButton";
+import { RootStackParamList } from "../navigation/MainNavigation";
 
 export default function SignInWelcomePage() {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();

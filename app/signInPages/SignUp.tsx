@@ -1,11 +1,11 @@
 import { StyleSheet, Text } from 'react-native';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
-import { RootStackParamList } from '../../App';
 import ScreenContainer from '../components/ScreenContainer';
 import BackButton from '../components/BackButton';
 import SocialButton from '../components/SocialButton';
 import Input from '../components/Input';
 import AppButton from '../components/AppButton';
+import { RootStackParamList } from '../navigation/MainNavigation';
 
 export default function SignUp() {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();

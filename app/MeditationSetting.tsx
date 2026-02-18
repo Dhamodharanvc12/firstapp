@@ -11,8 +11,9 @@ import DateTimePicker, {
   DateTimePickerEvent,
 } from '@react-native-community/datetimepicker';
 import { NavigationProp, useNavigation } from '@react-navigation/native';
-import { RootStackParamList } from '../App';
+import { RootStackParamList } from "./navigation/MainNavigation";
 import ScreenContainer from './components/ScreenContainer';
+import { Screen } from 'react-native-screens';
 
 export default function MeditationSetting() {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
@@ -92,13 +93,13 @@ export default function MeditationSetting() {
 
       <Pressable
         style={styles.button}
-        onPress={() => navigation.navigate('GetStarted')}
+        onPress={() => navigation.navigate('MainTab',{screen:'Home'})}
       >
         <Text style={styles.buttonText}>SAVE</Text>
       </Pressable>
 
       <Pressable
-        onPress={() => navigation.navigate('GetStarted')}
+        onPress={() => navigation.navigate('MainTab',{screen:'Home'})}
         style={{ marginTop: 20 }}
       >
         <Text style={{ textAlign: 'center' }}>NO THANKS</Text>
