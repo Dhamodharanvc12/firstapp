@@ -12,6 +12,7 @@ import DateTimePicker, {
 } from '@react-native-community/datetimepicker';
 import { NavigationProp, useNavigation } from '@react-navigation/native';
 import { RootStackParamList } from '../App';
+import ScreenContainer from './components/ScreenContainer';
 
 export default function MeditationSetting() {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
@@ -45,7 +46,7 @@ export default function MeditationSetting() {
   };
 
   return (
-    <View style={{ flex: 1, padding: 20, backgroundColor: '#fff' }}>
+    <ScreenContainer>
       <Text style={styles.boldText}>
         What time would you like to meditate?
       </Text>
@@ -112,7 +113,7 @@ export default function MeditationSetting() {
           onChange={onChange}
         />
       )}
-    </View>
+    </ScreenContainer>
   );
 }
 

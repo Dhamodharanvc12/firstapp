@@ -1,9 +1,9 @@
 import React from "react";
-import { Pressable, Text, Image, StyleSheet } from "react-native";
+import { Pressable, Text, Image, StyleSheet, ImageSourcePropType } from "react-native";
 
 type Props = {
   title: string;
-  icon: any;
+  icon: ImageSourcePropType;
   onPress?: () => void;
   backgroundColor?: string;
   textColor?: string;

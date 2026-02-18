@@ -1,6 +1,7 @@
 import { NavigationProp, useNavigation } from "@react-navigation/native";
 import { StyleSheet, Text, View, Image, Pressable } from "react-native";
 import { RootStackParamList } from "../App";
+import ScreenContainer from "./components/ScreenContainer";
 
 const categories = [
   { id: 1, name: "Reduce Stress", image: require("../assets/reduceStress.png") },
@@ -14,7 +15,7 @@ const categories = [
 export default function CategorySelection() {
     const navigation = useNavigation<NavigationProp<RootStackParamList>>();
   return (
-    <View style={styles.container}>
+    <ScreenContainer>
       <Text style={styles.boldText}>What Brings You</Text>
       <Text style={styles.text}>to Silent Moon?</Text>
       <Text style={styles.subText}>Choose a topic to focus on:</Text>
@@ -27,16 +28,11 @@ export default function CategorySelection() {
           </Pressable>
         ))}
       </View>
-    </View>
+    </ScreenContainer>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-    backgroundColor: "#fff",
-  },
   boldText: {
     fontSize: 28,
     fontWeight: "bold",

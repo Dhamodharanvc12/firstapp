@@ -1,8 +1,8 @@
 import React from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, ImageSourcePropType } from "react-native";
 
 type Props = {
-  logo: any;
+  logo: ImageSourcePropType;
 };
 
 export default function Header({ logo }: Props) {

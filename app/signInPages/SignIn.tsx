@@ -18,12 +18,12 @@ export default function SignIn() {
 
       <SocialButton
         title="Continue with Facebook"
-        icon={require('../assets/facebook.png')}
+        icon={require('../../assets/facebook.png')}
       />
 
       <SocialButton
         title="Continue with Google"
-        icon={require('../assets/google.png')}
+        icon={require('../../assets/google.png')}
         backgroundColor="white"
         textColor="black"
         border
