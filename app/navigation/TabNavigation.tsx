@@ -7,7 +7,6 @@ import Music from '../Music';
 import Sleep from '../Sleep';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-
 const Tab = createBottomTabNavigator();
 
 const TabNavigation = () => {
@@ -31,7 +30,16 @@ const TabNavigation = () => {
       })}
     >
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Sleep" component={Sleep} />
+      <Tab.Screen
+        name="Sleep"
+        component={Sleep}
+        options={{
+          tabBarStyle: {
+            backgroundColor: '#03174C',
+          },
+          tabBarActiveTintColor: '#8E97FD',
+        }}
+      />
       <Tab.Screen name="Meditate" component={Meditate} />
       <Tab.Screen name="Music" component={Music} />
       <Tab.Screen name="Avatar" component={Avatar} />

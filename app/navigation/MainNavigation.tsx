@@ -9,6 +9,7 @@ import Home from '../Home';
 import SignInWelcomePage from '../signInPages/SignInWelcomePage';
 import SignUp from '../signInPages/SignUp';
 import TabNavigation from './TabNavigation';
+import CourseDetails from '../CourseDetails';
 
 export type RootStackParamList = {
   Welcome: undefined;
@@ -17,6 +18,7 @@ export type RootStackParamList = {
   GetStarted: undefined;
   CategorySelection: undefined;
   MeditationSetting: undefined;
+  CourseDetails:undefined;
   MainTab: { 
     screen?:'Home' | 'Sleep' | 'Meditate' | 'Music' | 'Avatar'
   };

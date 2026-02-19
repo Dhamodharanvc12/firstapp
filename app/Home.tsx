@@ -80,6 +80,7 @@ export default function Home() {
                   paddingInline: 15,
                   borderRadius: 20,
                 }}
+                onPress={()=>navigation.navigate('CourseDetails')}
               >
                 <Text style={{ color: '#000', fontWeight: 'bold' }}>Start</Text>
               </Pressable>
@@ -119,6 +120,7 @@ export default function Home() {
                   paddingInline: 15,
                   borderRadius: 20,
                 }}
+                onPress={()=>navigation.navigate('CourseDetails')}
               >
                 <Text style={{ color: '#000', fontWeight: 'bold' }}>Start</Text>
               </Pressable>
@@ -167,7 +169,7 @@ export default function Home() {
               <Pressable
                 key={cat.id}
                 style={{ marginRight: 15, alignItems: 'center' }}
-                onPress={() => navigation.navigate('MeditationSetting')}
+                onPress={()=>navigation.navigate('CourseDetails')}
               >
                 <View style={styles.card}>
                   <Image
