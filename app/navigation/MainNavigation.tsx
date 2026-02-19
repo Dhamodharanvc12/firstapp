@@ -36,6 +36,7 @@ const MainNavigation = () => {
           <Stack.Screen name="CategorySelection" component={CategorySelection} />
           <Stack.Screen name="MeditationSetting" component={MeditationSetting} />
           <Stack.Screen name="MainTab" component={TabNavigation} />
+          <Stack.Screen name="CourseDetails" component={CourseDetails} />
         </Stack.Navigator>
   )
 }
